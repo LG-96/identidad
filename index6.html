@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDENTIDAD</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden; /* Evita la barra de desplazamiento */
+        }
+        .silhouette-container {
+            position: relative;
+            width: 90vw; /* Ajuste dinámico al ancho de la ventana */
+            height: 100vh; /* Ajuste dinámico al alto de la ventana */
+            max-width: 900px; /* Limita el tamaño máximo del contenedor */
+            max-height: 1200px; /* Limita el tamaño máximo del contenedor */
+        }
+        .video-thumbnail {
+            position: absolute;
+            width: 8%; /* Ajuste proporcional */
+            height: auto; /* Mantiene la relación de aspecto */
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .video-thumbnail:hover {
+            transform: scale(1.1);
+        }
+        /* Posiciones ajustadas */
+        .video1 { top: 7%; left: 42%; }
+        .video2 { top: 15%; left: 35%; }
+        .video3 { top: 15%; left: 49%; }
+        .video4 { top: 23%; left: 28%; }
+        .video5 { top: 23%; left: 42%; }
+        .video6 { top: 23%; left: 56%; }
+        .video7 { top: 31%; left: 21%; }
+        .video8 { top: 31%; left: 35%; }
+        .video9 { top: 31%; left: 49%; }
+        .video10 { top: 31%; left: 63%; }
+        .video11 { top: 39%; left: 28%; }
+        .video12 { top: 39%; left: 42%; }
+        .video13 { top: 39%; left: 56%; }
+        .video14 { top: 47%; left: 42%; }
+        .video15 { top: 55%; left: 42%; }
+        .video16 { top: 63%; left: 14%; }
+        .video17 { top: 63%; left: 28%; }
+        .video18 { top: 63%; left: 42%; }
+        .video19 { top: 63%; left: 56%; }
+        .video20 { top: 63%; left: 70%; }
+        .video21 { top: 71%; left: 21%; }
+        .video22 { top: 71%; left: 35%; }
+        .video23 { top: 71%; left: 49%; }
+        .video24 { top: 71%; left: 63%; }
+    </style>
+</head>
+<body>
+    <style>
+        .header-text {
+            color: white;
+        }
+    </style>
+    <div class="header-text" style="color: white;">
+        TRABAJO PRÁCTICO FINAL<br>
+        MATERIA: ESTRUCTURAS SONORAS Y VISUALES (1652)<br>
+        ALUMNO: GARCÍA, LEANDRO (42980)<br>
+        <!-- Reproductor de audio -->
+        <audio controls autoplay loop style="margin-top: 10px;">
+            <source src="tp-final-6.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>    
+    <div class="silhouette-container">
+        <!-- Miniaturas de videos -->
+        <img class="video-thumbnail video1" src="https://img.youtube.com/vi/rCzDwx3iEKg/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=rCzDwx3iEKg')" alt="Video 1">
+        <img class="video-thumbnail video2" src="https://img.youtube.com/vi/4bXn63BzI1c/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=4bXn63BzI1c')" alt="Video 2">
+        <img class="video-thumbnail video3" src="https://img.youtube.com/vi/kQcq3rpne78/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=kQcq3rpne78')" alt="Video 3">
+        <img class="video-thumbnail video4" src="https://img.youtube.com/vi/rdQrwBVRzEg/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=rdQrwBVRzEg')" alt="Video 4">
+        <img class="video-thumbnail video5" src="https://img.youtube.com/vi/wpM499XhMJQ/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=wpM499XhMJQ')" alt="Video 5">
+        <img class="video-thumbnail video6" src="https://img.youtube.com/vi/KsFHxUcMhLg/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=KsFHxUcMhLg')" alt="Video 6">
+        <img class="video-thumbnail video7" src="https://img.youtube.com/vi/ypIbTpnuNgg/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=ypIbTpnuNgg')" alt="Video 7">
+        <img class="video-thumbnail video8" src="https://img.youtube.com/vi/2h6hPEDUdSo/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=2h6hPEDUdSo')" alt="Video 8">
+        <img class="video-thumbnail video9" src="https://img.youtube.com/vi/86dPyGQFMnU/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=86dPyGQFMnU')" alt="Video 9">
+        <img class="video-thumbnail video10" src="https://img.youtube.com/vi/CffUJoD3jDc/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=CffUJoD3jDc')" alt="Video 10">
+        <img class="video-thumbnail video11" src="https://img.youtube.com/vi/Jfp24M7SzJ0/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=Jfp24M7SzJ0')" alt="Video 11">
+        <img class="video-thumbnail video12" src="https://img.youtube.com/vi/Cxvtp4luLeA/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=Cxvtp4luLeA&list=PLuspNhUEXcpD3CsDkNBdiP_uEYWzSOITc')" alt="Video 12">
+        <img class="video-thumbnail video13" src="https://img.youtube.com/vi/OKlbd2tTdL0/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=OKlbd2tTdL0')" alt="Video 13">
+        <img class="video-thumbnail video14" src="https://img.youtube.com/vi/6U0kFulAzP4/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=6U0kFulAzP4')" alt="Video 14">
+        <img class="video-thumbnail video15" src="https://img.youtube.com/vi/rCzDwx3iEKg/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=rCzDwx3iEKg')" alt="Video 15">
+        <img class="video-thumbnail video16" src="https://img.youtube.com/vi/4bXn63BzI1c/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=4bXn63BzI1c')" alt="Video 16">
+        <img class="video-thumbnail video17" src="https://img.youtube.com/vi/kQcq3rpne78/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=kQcq3rpne78')" alt="Video 17">
+        <img class="video-thumbnail video18" src="https://img.youtube.com/vi/wpM499XhMJQ/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=wpM499XhMJQ')" alt="Video 18">
+        <img class="video-thumbnail video19" src="https://img.youtube.com/vi/KsFHxUcMhLg/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=KsFHxUcMhLg')" alt="Video 19">
+        <img class="video-thumbnail video20" src="https://img.youtube.com/vi/ypIbTpnuNgg/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=ypIbTpnuNgg')" alt="Video 20">
+        <img class="video-thumbnail video21" src="https://img.youtube.com/vi/2h6hPEDUdSo/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=2h6hPEDUdSo')" alt="Video 21">
+        <img class="video-thumbnail video22" src="https://img.youtube.com/vi/86dPyGQFMnU/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=86dPyGQFMnU')" alt="Video 22">
+        <img class="video-thumbnail video23" src="https://img.youtube.com/vi/CffUJoD3jDc/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=CffUJoD3jDc')" alt="Video 23">
+        <img class="video-thumbnail video24" src="https://img.youtube.com/vi/Jfp24M7SzJ0/0.jpg" onclick="openVideo('https://www.youtube.com/watch?v=Jfp24M7SzJ0')" alt="Video 24">
+    </div>
+    <script>
+        function openVideo(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
